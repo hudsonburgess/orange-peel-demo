@@ -1,11 +1,11 @@
-import { KhaleesiDriver, BrowserType } from 'orange-peel';
+import { Browser, BrowserType } from 'orange-peel';
 
 describe('Khaleesi demo', () => {
 
-    let driver: KhaleesiDriver;
+    let driver: Browser;
 
     beforeAll(() => {
-        driver = new KhaleesiDriver(BrowserType.CHROME);
+        driver = new Browser(BrowserType.CHROME);
     });
 
     afterAll(() => {
